@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecureTracker - Share Location</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>SecureTracker</h1>
+  <p>Click below to start sharing your location securely.</p>
+
+  <button onclick="startSharing()">Start Sharing</button>
+
+  <h2>Set Destination (type address)</h2>
+  <input type="text" id="destination" placeholder="e.g. 30 Davenport Avenue, Durban" />
+  <button onclick="geocodeAndSetDestination()">Set Destination</button>
+
+  <p>Share this link with the person who will track you:</p>
+  <input id="share-link" readonly style="width: 100%;" />
+
+  <br><br>
+  <button onclick="markSafe()">I’m Safe</button>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

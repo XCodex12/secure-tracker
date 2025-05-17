@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecureTracker - Tracking View</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Location Map</h1>
+  <div id="map">Loading map...</div>
+  <div id="alert" style="color: red; font-weight: bold;"></div>
+
+  <h2>Emergency Contacts</h2>
+  <ul id="emergency-list"></ul>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
